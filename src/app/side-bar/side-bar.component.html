@@ -1,0 +1,53 @@
+
+    <mat-nav-list>
+      <h3 matSubheader>Menu</h3>
+      <a mat-list-item routerLink="/dashboard" routerLinkActive="active">
+        <mat-icon>dashboard</mat-icon>
+        <span>Dashboard</span>
+      </a>
+      <a mat-list-item routerLink="/customers" routerLinkActive="active">
+        <mat-icon>people</mat-icon>
+        <span>Customers</span>
+      </a>
+      <a mat-list-item routerLink="/payments" routerLinkActive="active">
+        <mat-icon>payment</mat-icon>
+        <span>Payments</span>
+      </a>
+      <a mat-list-item routerLink="/invoices" routerLinkActive="active">
+        <mat-icon>description</mat-icon>
+        <span>Invoices</span>
+      </a>
+      <a mat-list-item routerLink="/loans" routerLinkActive="active">
+        <mat-icon>account_balance</mat-icon>
+        <span>Loans</span>
+      </a>
+      <a mat-list-item routerLink="/plans" routerLinkActive="active">
+        <mat-icon>account_balance_wallet</mat-icon>
+        <span>Plans</span>
+      </a>
+      <a mat-list-item routerLink="/reports" routerLinkActive="active">
+        <mat-icon>bar_chart</mat-icon>
+        <span>Reports</span>
+      </a>
+      <a mat-list-item routerLink="/seating" routerLinkActive="active">
+        <mat-icon>event_seat</mat-icon>
+        <span>Settings</span>
+      </a>
+    </mat-nav-list>
+ 
+<style>
+  .nav-container {
+    width: 100%;
+    height: 100%;
+  }
+  .sidebar {
+    width: 200px;
+  }
+  .mat-drawer-content {
+    height: 100%;
+  }
+  .active {
+    background-color: #eee;
+    color: #1976d2;
+  }
+</style>

@@ -1,0 +1,26 @@
+<mat-drawer-container class="nav-container">
+  <mat-drawer #drawer mode="over" class="sidebar">
+    <!-- Add your side bar content here -->
+     <app-side-bar></app-side-bar>
+  </mat-drawer>
+  <mat-toolbar color="primary">
+    <button mat-icon-button (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Loan</span>
+  </mat-toolbar>
+  <!-- Add your main content here -->
+</mat-drawer-container>
+
+<style>
+  .nav-container {
+    width: 100%;
+    height: 100%;
+  }
+  .mat-drawer-content {
+    height: 100%;
+  }
+  .sidebar {
+    width: 300px; /* Change this value to increase or decrease the width */
+  }
+</style>
