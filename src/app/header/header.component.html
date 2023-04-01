@@ -1,26 +1,20 @@
-<mat-drawer-container class="nav-container">
-  <mat-drawer #drawer mode="over" class="sidebar">
-    <!-- Add your side bar content here -->
-     <app-side-bar></app-side-bar>
-  </mat-drawer>
-  <mat-toolbar color="primary">
-    <button mat-icon-button (click)="drawer.toggle()">
-      <mat-icon>menu</mat-icon>
-    </button>
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
     <span>Loan</span>
-  </mat-toolbar>
-  <!-- Add your main content here -->
-</mat-drawer-container>
-
-<style>
-  .nav-container {
-    width: 100%;
-    height: 100%;
-  }
-  .mat-drawer-content {
-    height: 100%;
-  }
-  .sidebar {
-    width: 300px; /* Change this value to increase or decrease the width */
-  }
-</style>
+    <span class="spacer"></span>
+    <button mat-icon-button [matMenuTriggerFor]="menu" class="left-btn">
+     <mat-icon>account_circle</mat-icon>
+        <span>Profile</span>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>account_circle</mat-icon>
+        <span>Profile</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>logout</mat-icon>
+        <span>Logout</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>

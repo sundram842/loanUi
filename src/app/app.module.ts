@@ -14,6 +14,23 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatListModule } from '@angular/material/list';
+import { CustomerListComponent } from './customers/customer-list/customer-list.component';
+import { MatTableModule } from '@angular/material/table';
+import { AddCustomerComponent } from './customers/add-customer/add-customer.component';
+import { SearchCustomerComponent } from './customers/search-customer/search-customer.component';
+import { EditCustomerComponent } from './customers/edit-customer/edit-customer.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { CommonModule } from '@angular/common';
+import { InvoicesListComponent } from './invoices/invoices-list/invoices-list.component';
+import { PaymentListComponent } from './payments/payment-list/payment-list.component';
+import { LoanListComponent } from './lone/loan-list/loan-list.component';
+import { PlanListComponent } from './plans/plan-list/plan-list.component';
+
+
+
+
 
 
 
@@ -22,7 +39,15 @@ import { MatListModule } from '@angular/material/list';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    SideBarComponent
+    SideBarComponent,
+    CustomerListComponent,
+    AddCustomerComponent,
+    SearchCustomerComponent,
+    EditCustomerComponent,
+    InvoicesListComponent,
+    PaymentListComponent,
+    LoanListComponent,
+    PlanListComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +59,12 @@ import { MatListModule } from '@angular/material/list';
     MatIconModule,
     MatSidenavModule,
     MatMenuModule,
-    MatListModule
+    MatListModule,
+    MatTableModule,
+    MatCardModule,
+    MatFormFieldModule,
+    CommonModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

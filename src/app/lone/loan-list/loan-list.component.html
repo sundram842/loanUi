@@ -1,0 +1,61 @@
+<div class="Add-customer-btn">
+  <h1>Customers</h1>
+ <button mat-raised-button color="primary">Add customer</button>
+</div>
+
+
+ <mat-form-field>
+    <input matInput  placeholder="Search...">
+    <button mat-button matSuffix mat-icon-button aria-label="Filter">
+      <mat-icon>search</mat-icon>
+    </button>
+  </mat-form-field>
+
+
+<table mat-table>
+ 
+
+  <ng-container matColumnDef="Loan Id">
+    <th mat-header-cell *matHeaderCellDef>Customer ID</th>
+    <td mat-cell *matCellDef="let customer">{{customer.customerId}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="Customer Name">
+    <th mat-header-cell *matHeaderCellDef>Full Name</th>
+    <td mat-cell *matCellDef="let customer">{{customer.fullName}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="Loan Type">
+    <th mat-header-cell *matHeaderCellDef>Last Name</th>
+    <td mat-cell *matCellDef="let customer">{{customer.lastName}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="Installments">
+    <th mat-header-cell *matHeaderCellDef>Installments</th>
+    <td mat-cell *matCellDef="let customer">{{customer.phoneNumber}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="Roi">
+    <th mat-header-cell *matHeaderCellDef>Roi</th>
+    <td mat-cell *matCellDef="let customer">{{customer.emailAddress}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="Total Amount">
+    <th mat-header-cell *matHeaderCellDef>Total Amount</th>
+    <td mat-cell *matCellDef="let customer">{{customer.address}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="Pending Amount">
+    <th mat-header-cell *matHeaderCellDef>Pending Amount</th>
+    <td mat-cell *matCellDef="let customer">{{customer.department}}</td>
+  </ng-container>
+
+    <ng-container matColumnDef="Loan Status">
+    <th mat-header-cell *matHeaderCellDef>Loan Status</th>
+    <td mat-cell *matCellDef="let customer">{{customer.department}}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+</table>
